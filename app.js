@@ -41,7 +41,7 @@ app.post("/add-volunteer", async(req, res) => {
 })
 
 app.get("/view-volunteer", async(req, res) => {
-    const volunteers = await team.find()
+    const volunteers = await volunteer.find()
     res.json(volunteers)
 })
 
